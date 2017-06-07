@@ -1,0 +1,57 @@
+{
+  "name": "easyvpn",
+  "version": "0.0.1",
+  "description": "Easy way to get a VPN connection.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/marcus-sa/node-autovpn.git",
+  "author": {
+    "name": "Marcus S. Abildskov",
+    "email": "marcussa2000@gmail.com"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "keywords": [
+    "connection",
+    "network",
+    "openvpn",
+    "auto",
+    "vpn",
+    "tunnel"
+  ],
+  "scripts": {
+    "compile": "babel -d dist/ src/",
+    "dev": "./node_modules/.bin/babel-node test/",
+    "prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "axios": "*",
+    "bluebird": "*",
+    "commander": "*",
+    "csvtojson": "*",
+    "event-emitter-es6": "^1.1.5",
+    "prompt": "*",
+    "request": "*",
+    "socks5-http-client": "*",
+    "split": "*",
+    "sudo": "*",
+    "through2": "*",
+    "which": "*",
+    "winston": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-register": "*",
+    "babel-plugin-add-module-exports": "*",
+    "cross-env": "*"
+  },
+  "bin": {
+    "easyvpn": "bin/autovpn"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
